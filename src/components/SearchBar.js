@@ -5,7 +5,7 @@ const SearchBar = ({ onSearch }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (city.trim() === "") return;
+    if (!city.trim()) return;
     onSearch(city);
     setCity("");
   };
@@ -17,8 +17,9 @@ const SearchBar = ({ onSearch }) => {
         placeholder="Enter city..."
         value={city}
         onChange={(e) => setCity(e.target.value)}
+        onKeyDown={(e) => e.key === "Enter" && handleSubmit(e)}
       />
-      <button type="submit">Search</button>
+      <button type="submit">🔍 Search</button>
     </form>
   );
 };
