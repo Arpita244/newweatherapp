@@ -1,15 +1,12 @@
 import React, { useState } from "react";
-
 const SearchBar = ({ onSearch }) => {
   const [city, setCity] = useState("");
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!city.trim()) return;
     onSearch(city);
     setCity("");
   };
-
   return (
     <form onSubmit={handleSubmit} className="search-bar">
       <input
@@ -23,5 +20,4 @@ const SearchBar = ({ onSearch }) => {
     </form>
   );
 };
-
 export default SearchBar;
