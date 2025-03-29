@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 5px;
+  }
+  
+  .search-bar button {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .weather-card {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .error {
+    color: red;
+  }
+  
