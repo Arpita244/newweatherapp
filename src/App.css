@@ -51,3 +51,10 @@ body {
   padding: 5px 10px;
   cursor: pointer;
 }
+.refresh-btn {
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}

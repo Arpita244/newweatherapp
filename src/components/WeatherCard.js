@@ -1,6 +1,6 @@
 import React from "react";
 
-const WeatherCard = ({ weather }) => {
+const WeatherCard = ({ weather, onRefresh }) => {
   if (!weather) return null;
 
   return (
@@ -14,6 +14,7 @@ const WeatherCard = ({ weather }) => {
         src={`https://openweathermap.org/img/w/${weather.weather[0].icon}.png`}
         alt="Weather Icon"
       />
+      <button className="refresh-btn" onClick={onRefresh}>🔄 Refresh</button>
     </div>
   );
 };
